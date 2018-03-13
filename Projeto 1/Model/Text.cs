@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Projeto_1
+namespace Projeto_1.Model
 {
     class Text
     {
@@ -39,8 +39,7 @@ namespace Projeto_1
         public void Exer1_2()
         {
             Console.WriteLine("\nO numero é par !");
-            Thread.Sleep(3000);
-            Console.Clear();
+            waiting(2000);
         }
         /// <summary>
         /// Este metodo mostra o resultado impar
@@ -48,7 +47,31 @@ namespace Projeto_1
         public void Exer1_3()
         {
             Console.WriteLine("\nO numero é impar !");
-            Thread.Sleep(3000);
+            waiting(2000);
+        }
+
+        public void Exer2_1()
+        {
+            Console.Clear();
+            Console.WriteLine("Exercicio 2\n\n" +
+                "Favor entrar com o primeiro valor:");
+        }
+
+        public void Exer2_2()
+        {
+            Console.Clear();
+            Console.WriteLine("Agora, entre com o segundo valor:");
+        }
+
+        public void Exer2_3(int valMenor, int valMaior)
+        {
+            Console.Clear();
+            Console.WriteLine("A diferença entre " + valMenor + " e " + valMaior + " é:");
+        }
+
+        public void waiting(Int32 time)
+        {
+            Thread.Sleep(time);
             Console.Clear();
         }
 
@@ -58,8 +81,7 @@ namespace Projeto_1
         public void ErrorNumber()
         {
             Console.WriteLine("\nValor passado é inválido\n");
-            Thread.Sleep(2000);
-            Console.Clear();
+            waiting(3000);
         }
 
         /// <summary>
